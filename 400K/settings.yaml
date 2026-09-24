@@ -1,0 +1,32 @@
+# general settings
+scattering_type: [IMP, ADP, POP]
+doping: 1E16:1E21:121
+temperatures: [400]
+bandgap: 0.30
+pop_frequency: 3.5
+# electronic_structure settings
+interpolation_factor: 50
+
+# materials properties
+deformation_potential: deformation.h5
+elastic_constant:
+ - [28.56608,     6.77174,    19.63336,     -0.00494,    10.35813,     -0.00739]
+ - [6.77174,    28.54543,    19.64369,     -0.00098,   -10.38552,     -0.00078]
+ - [19.63336,    19.64369,    63.22699,     -0.00314,      0.00427,     -0.00467]
+ - [-0.00494,     -0.00098,     -0.00314,    10.87682,     -0.00206,    10.35396]
+ - [ 10.35813,   -10.38552,      0.00427,     -0.00206,    29.24735,     -0.00280]
+ - [-0.00739,     -0.00078,     -0.00467,    10.35396,     -0.00280,    29.25664]
+static_dielectric:
+  - [68.747, 0.000, 0.000]
+  - [0.000, 68.747, 0.000]
+  - [0.000, 0.000, 70.351]
+high_frequency_dielectric:
+  - [52.294419,     0.000000,     0.000000]
+  - [0.000000,    52.294432,     0.000000]
+  - [0.000000,    -0.000000,    56.277874]
+       
+# performance settings
+# write_mesh: true
+use_projections: true
+# 指定 AMSET 使用 8 个 CPU 核心进行并行计算
+nworkers: 6
