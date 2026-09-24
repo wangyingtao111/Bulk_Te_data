@@ -1,0 +1,18 @@
+PREC   = Normal
+ENCUT  = 520
+EDIFF  = 1.0E-06
+NELM   = 100
+
+IBRION = -1
+
+ISMEAR = -5
+SIGMA  = 0.05
+
+LREAL  = .FALSE.
+ADDGRID= .TRUE.
+LASPH  = .TRUE.
+ISYM   = 0
+
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
+

@@ -1,0 +1,3 @@
+thirdorder.vasp sow 2 3 3 0.4
+find vasprun* -name vasprun.xml|sort -n|thirdorder.vasp reap 2 3 3 0.4
+
